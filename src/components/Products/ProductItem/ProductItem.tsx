@@ -40,7 +40,7 @@ export const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
             
             <div className="product__image">
             {imageLoaded ? (
-               <img src={image_src} alt='img' onLoad={handleImageLoad}
+               <img src={import.meta.env.BASE_URL + image_src} alt='img' onLoad={handleImageLoad}
                onError={handleImageError}  className='image'/>
             ) : (
               <div className='image'>Failed to Load Image</div>
