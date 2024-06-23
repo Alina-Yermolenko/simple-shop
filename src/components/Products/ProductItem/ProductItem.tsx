@@ -9,15 +9,12 @@ interface ProductItemProps {
 
 export const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
   const {
-    id,
     title,
     vendor,
     tags,
     published,
     url,
     image_src,
-    option_value,
-    sku,
     price,
     subscription_discount,
     subscription,
