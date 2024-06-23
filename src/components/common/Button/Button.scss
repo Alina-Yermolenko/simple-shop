@@ -1,0 +1,17 @@
+.action-button {
+    padding: 0;
+    margin-right: 10px;
+    background: none;
+    color: #3F88C5;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        color: #fa198b;
+    }
+}
+
+.active {
+    color: #fa198b;
+}

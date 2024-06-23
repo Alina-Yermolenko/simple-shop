@@ -1,0 +1,36 @@
+.breadcrumb {
+    height: 20px;
+    border-radius: 4px;
+    list-style: none;
+    font-size: 14px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    &-block {
+       display: flex;
+       margin: 0;
+       padding: 0;
+    }
+}
+
+.breadcrumb-item {
+    a {
+        padding-right: 10px;
+        width: 50px;
+        text-decoration: none;
+        color: #052F5F;
+    }
+
+    &:not(:last-child)::after {
+        content: '/';
+        margin: 0 5px;
+    }
+
+    &.active {
+        padding: 0 10px;
+
+        font-weight: bold;
+    }
+}
