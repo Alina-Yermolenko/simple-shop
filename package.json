@@ -1,9 +1,17 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "simple_shop",
   "private": true,
-  "homepage": "https://alina-yermolenko.github.io/simple-shop/#",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
   "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,44 +20,22 @@
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "json-server": "^0.17.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "sass": "^1.66.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start:server": "json-server --watch data/products.json --port 3010",
-    "start:app": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" ,
-    "start": "concurrently \"npm run start:server\" \"npm run start:app\"",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "devDependencies": {
-    "concurrently": "^7.6.0",
-    "gh-pages": "^6.1.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
   }
 }
