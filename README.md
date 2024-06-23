@@ -16,7 +16,7 @@ This React application showcases a versatile product listing with advanced filte
 - **Protected Routes:** Certain pages, such as the Posts Page and Single Post Page, are protected routes. Users must log in to access these pages. If a user is not authenticated, they will be redirected to the Login Page.
 
 - **Style guide:** I created a style guide that I used for this project.
-![style-guide](./pictures/Style-guide.png)
+![style-guide](./public/pictures/style-guide.png)
 
 
 ## Test Cases for the `Products` Component:
