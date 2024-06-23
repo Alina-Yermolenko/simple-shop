@@ -25,7 +25,7 @@ export const Products = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/data/products.json', {
+        const response = await fetch(process.env.root + 'data/products.json', {
           headers: {
             'Content-Type': 'application/json'
           }
